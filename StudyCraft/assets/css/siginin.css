@@ -1,0 +1,70 @@
+.signin__input{
+    border: 1px solid #BBC5D8;
+    border-radius: 3px;
+    height: 42px;
+    margin: 4px 5px;
+}
+.signin__input:focus{
+    outline: none !important;
+}
+
+
+
+
+.signin{
+    width: 430px;
+    margin: 100px auto;
+}
+
+
+
+
+/* signin input */
+
+.signin-email{
+    width: 420px;
+    box-sizing: border-box;    
+}
+.singin-password{
+    width: 420px;
+    box-sizing: border-box;
+}
+
+.singin-password-re{
+    width: 420px;
+    box-sizing: border-box;
+}
+
+
+.signin-number{
+    display: flex;
+}
+
+
+.singin-number__code{
+    width: 180px;
+    box-sizing: border-box;
+}
+
+.signin-number__number{
+    box-sizing: border-box;
+    width: 230px;
+}
+
+.singin-name__text{
+    box-sizing: border-box;
+    width: 420px;
+}
+
+.link-login{
+    font-size: 13px;
+    margin:10px 0;
+    text-align: center;
+}
+
+.sign-btn{
+    margin: 4px 5px;
+    width: 420px;
+    box-sizing: border-box;
+}
+

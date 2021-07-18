@@ -1,0 +1,80 @@
+/* common */
+
+/* button */
+.btn {
+    width: 258px;
+    padding: 14px;
+    border: 1px solid #BBC5D8;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+  }
+
+  .btn:hover{
+    background-color: #333;
+    color: #fff;
+  }
+
+  .btn--blue{
+    background-color: #4E61FF;
+    border-color:  #4E61FF;
+    color: #fff;
+  }
+
+  .btn--blue:hover{
+    background-color: #4142DD;
+    border-color:  #4142DD;
+  }
+
+  .btn--white{
+    background-color: #fff;
+    color: #000;
+  }
+
+  .btn--white:hover{
+    background-color: #fff;
+    border-color: #4E61FF;
+    color: #4E61FF;
+  }
+
+
+  /* link */
+
+  .link--blue{
+    font-family: Arial, sans-serif;
+    color: #4E61FF;
+  }
+
+
+  /* color */
+
+  .red{
+    color: red;
+  }
+
+  .blue{
+    color: blue;
+  }
+
+  /*border-underline*/
+
+  .signin__input.underline-blue{
+    border: 3px;
+    border-radius: 5px;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+  }
+
+  .underline-red{
+    border: 3px;
+    border-radius: 5px;
+    border-color: red;
+    box-shadow: 0 0 10px red;
+  }
