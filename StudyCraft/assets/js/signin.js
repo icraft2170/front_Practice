@@ -85,21 +85,22 @@ window.addEventListener('load',function(){
         singInPassword.classList.remove("underline-blue");
         singInPassword.classList.remove("underline-red");
     }
-
+    
     singInPassword.addEventListener('input',passwordValidCheck);
     singInPassword.addEventListener('input',passwordInput);
+    singInPassword.addEventListener('input',passwordReValidCheck);
     singInPassword.addEventListener('blur',passwordBlur);
-
+    
     // Password-re Input
     function passwordReValidCheck(){
         const addPassWordValid = signIn.querySelector('.signin-password-re__vailidcheck');
         let check;
         const template = `
-            <div>
-                {{__password_vaild_re_check_value__}}
-            </div>
+        <div>
+        {{__password_vaild_re_check_value__}}
+        </div>
         `
-
+        
         if(singInPassword.value !== singInPasswordRe.value){
             check =`
             <span class="material-icons red">
@@ -113,10 +114,10 @@ window.addEventListener('load',function(){
             </span>
             `
         }
-
+        
         addPassWordValid.innerHTML = template.replace('{{__password_vaild_re_check_value__}}',check);
     }
-
+    
     function passwordReInput(){
         const regExp =/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/
         if(singInPassword.value !== singInPasswordRe.value){
@@ -133,11 +134,11 @@ window.addEventListener('load',function(){
         singInPasswordRe.classList.remove("underline-blue");
         singInPasswordRe.classList.remove("underline-red");
     }
-
+    
     singInPasswordRe.addEventListener('input',passwordReValidCheck);
     singInPasswordRe.addEventListener('input',passwordReInput);
     singInPasswordRe.addEventListener('blur',passwordReBlur);
-
+    
 });
 
 
