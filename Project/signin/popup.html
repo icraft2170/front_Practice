@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body{
+            background-color: #EAEAEA;
+        }
+
+
+        .popup-box{
+            width: 350px;
+            height: 530px;
+            position: absolute;
+            background-color: #fff;
+            box-sizing: border-box;
+            border-radius: 5px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);;
+        }
+
+        .popup-box .header{
+            display: flex;
+            width: 350px;
+            height: 80px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .popup-box .header .title{
+            width: 220px;
+            height: 25px;
+            text-align: center;
+            margin-right: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-box .header .close-iconse{
+            width: 30px;
+            height: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-box .body{
+            display: block;
+            box-sizing: border-box;
+            width: 350px;
+            height: 370px;
+            padding: 0 10px;
+            overflow: scroll;
+        }
+
+        .popup-box .footer{
+            display: flex;
+            padding-bottom: 20px;
+        }
+
+        .popup-box .footer .commit{
+            display: block;
+            width: 80px;
+            height: 50px;
+            outline: none;
+            color: blue;
+            background-color: #fff;
+            border: none;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+ 
+    </style>
+
+
+</head>
+<body>
+    <div class="popup-box">
+        <div class="header">
+            <div class="title">
+                {{__popup_title__}}
+            </div>
+            <div class="close-icons">
+                <span class="material-icons">close</span>
+            </div>
+        </div>
+
+        <div class="body">
+            {{__popup_content__}}
+        </div>
+
+        <div class="footer">
+            <button class="commit">확인</button>
+        <div>
+    <div>
+
+        <script>
+            var popupBox = document.querySelector('.popup-box');
+            var close = document.querySelector('.popup-box .header .close-icons');
+            var commit = document.querySelector('.popup-box .footer .commit');
+
+            close.addEventListener('click',function(){
+                popupBox.remove();
+            });
+    
+            commit.addEventListener('click',function(){
+                popupBox.remove();
+            });
+        </script>
+</body>
+</html>

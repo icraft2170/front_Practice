@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="/asset/css/common.css">
+    <link rel="stylesheet" href="/asset/css/signin/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="/asset/js/signin/main.js"></script>
+    <title>SIGN IN</title>
+
+</head>
+<body>
+    <!-- <nav class="nav-top">
+        <div class="nav-top__menu">
+            <ul>
+                <li>
+                    
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <div class="nav-top__login">
+            <div class="nav-top__login ">
+                <div class="nav-top__login material-icons">
+                    <a href="/login/login.html">
+                        account_circle
+                    </a>
+                </div>
+            <div class="nav-top__QnA material-icons">
+                <a href="">
+                    contact_support
+                </a>
+            </div>
+        </div>
+    </nav>     -->
+    
+    <section class="sign-in__container">
+
+        <div class="sign-in__content">
+            <h1 class="logo">
+                <img src="../asset/images/rainbow-logo.png" alt="logo" class="sign-in__logo">
+            </h1>
+            <div class="sign-in__form">
+                <form action="" method="POST">
+                    <div class="sign-in__input">
+                        <label class="sign-in--label">
+                            <input type="email" placeholder="이메일" name="" class="sign-in--text input__email" />
+                            <span class="material-icons sign-in--label--id">
+                                <!-- done : 유효성 체크 후 추가할 문자. -->
+                            </span>
+                        </label>
+                    </div>
+                    <div class="sign-in__id--error error-message">
+        
+                    </div>
+                    <div class="sign-in__input">
+                        <label class="sign-in--label">
+                            <input type="password" placeholder="비밀번호" name="" class="sign-in--text input__password" />
+                            <a class="material-icons sign-in--label--password">
+                                <!-- visibility :  -->
+                                <!-- done : 유효성 체크 후 추가할 문자. -->
+                                visibility_off
+                            </a>
+                        </label>    
+                    </div>
+                    <div class="sign-in__pwd--error">
+        
+                    </div>
+                    <div class="sign-in__input">
+                        <label class="sign-in--label">
+                            <input type="password" placeholder="비밀번호 확인" name=""  class="sign-in--text input__password--re" />
+                            <a class="material-icons sign-in--label--passwordRe">
+                                <!-- visibility -->
+                                <!-- done : 유효성 체크 후 추가할 문자. -->
+                                visibility_off
+                            </a>
+                        </label>    
+                    </div>
+                    <div class="sign-in__pwdRe--error">
+                
+                    </div>
+                    <div class="sign-in__input">
+                        <label class="sign-in--label">
+                            <input type="text" name="" placeholder="이름"  class="sign-in--text input__name" />
+                            <span class="material-icons sign-in--label--name">
+                                <!-- done : 유효성 체크 후 추가할 문자. -->
+                            </span>
+                        </label>
+                    </div>
+                    <div class="sign-in__name--error">
+
+                    </div>
+                    <div class="sign-in__input">
+                        <label class="sign-in--label">
+                            <input type="text" name="" placeholder="핸드폰 번호"  class="sign-in--text input__number" />
+                            <span class="material-icons sign-in--label--number">
+                                <!-- done : 유효성 최크 후 추가할 문자. -->
+                            </span>
+                        </label>
+                    </div>
+                    <div class="sign-in__number--error">
+                        
+                    </div>
+                    <div class="sign-in-checkbox">
+                        <div class="title">
+                            스터디박스의 이용약관에 동의해 주세요
+                        </div>
+                        <div class="checkall">
+                                <label for="">
+                                <input type="checkbox" class="check-box--all" name="" />
+                                    <span class="checkall__label">모두 동의합니다.</span>
+                                </label>
+                        </div>
+                        <div class="error-tip">
+                        </div>
+                        <ul class="check-items">
+                            <div class="check-item">
+                                <label for="" class="check-line">
+                                    <input type="checkbox" class="sign-in__check " name="" />
+                                        <span class="checkbox_info">[필수] 만 14세 이상 입니다.</span>
+                                </label>
+                            </div>
+                            <div class="check-item">
+                                <label for="" class="check-line">
+                                    <input type="checkbox" class="sign-in__check" name="" />
+                                        <span class="checkbox_info">[필수] 스터디 박스 이용약관 동의</span>
+                                </label>
+                                <span href="" class="material-icons checkbox-detail popup--serviceTerms">
+                                    arrow_forward_ios
+                                </span>
+                            </div>
+                            <div class="check-item">
+                                <label for="" class="check-line">
+                                    <input type="checkbox" class="sign-in__check" name="" />
+                                        <span class="checkbox_info">[필수] 개인정보 수집및 이용동의</span>
+                                </label>
+                                <span href="" class="material-icons checkbox-detail popup--personalCollection">
+                                    arrow_forward_ios
+                                </span>
+                            </div>
+                            <div class="check-item">
+                                <label for="" class="check-line">
+                                    <input type="checkbox" class="sign-in__check" name="" />
+                                        <span class="checkbox_info">[필수] 개인정보 제공동의</span>
+                                </label>
+                                <span href="" class="material-icons checkbox-detail popup--personalOffer">
+                                    arrow_forward_ios
+                                </span>
+                            </div>
+                        </ul>
+
+                    </div>
+
+                    <div class="sign-in__input">
+                        <input type="submit" class="btn btn--blue sign-in__btn" value="회원가입" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="popup">
+
+    </div>
+
+
+    <footer>
+        <div class="inner">
+            <ul class="menu">
+                <li><a href="javascript:voide(0)">회사소개</a></li>
+                <li><a href="javascript:voide(0)">사용자약관</a></li>
+                <li><a href="javascript:voide(0)">개인정보 취급방침</a></li>
+                <li><a href="javascript:voide(0)">쿠키정책</a></li>
+                <li><a href="javascript:voide(0)">브랜드정책</a></li>
+                <li><a href="javascript:voide(0)">저작권정책</a></li>
+                <li><a href="javascript:voide(0)">홈페이지 이용약관</a></li>
+                <li><a href="javascript:voide(0)">위치정보</a></li>
+              </ul>
+
+              <div class="info">
+                <span>사업자등록번호 119-1119-11119</span>
+                <span> (주)스터티 박스 대표이사 손현호</span>
+                <span>TEL : 010) 7618-1227</span>
+                <span>개인정보 책임자 : 손현호</span>
+              </div>
+        
+              <p class="copyright">
+                &copy; <span class="this-year"></span> StudyBox
+              </p>
+          </div>
+        </div>
+    </footer>
+
+    <div class="script">
+
+    </div>
+</body>
+</html>
+
